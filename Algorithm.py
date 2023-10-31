@@ -11,6 +11,7 @@ Highscore_list = {}
 
 Game = True
 
+# This adds the usser and their highscore to the highscore list
 def add_user(Name, Counter):
     
     #Highscore_list.update({"Name": Name, "Counter": Counter})
@@ -52,7 +53,7 @@ while Game:
                 print ("you guess is too high")
                 Counter = Counter + 1
 
-       # this tells the player that they have guessed correctly and resets the guess and counter to 0
+       # this tells the player that they have guessed correctly adds them to the highscore list and resets the guess and counter to 0
         Counter = Counter + 1
         print ("Congrats!! you did it in", Counter,"tries!!")
         
@@ -64,7 +65,7 @@ while Game:
         Name = 0
 
     elif Choice == 2:
-
+        # this prints the highscore list
         print (Highscore_list)
 
     # this ends the program
