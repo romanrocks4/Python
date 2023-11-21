@@ -9,6 +9,13 @@ Guess = 0
 Counter = 0
 Highscore_list = {}
 
+menu = [
+    "Romans number game!!",
+    "1.Start",
+    "2.See highscores",
+    "3.Exit"
+]
+
 Game = True
 
 # This adds the usser and their highscore to the highscore list
@@ -24,12 +31,11 @@ def add_user(Name, Counter):
 while Game:
     # This is generating the the random number and printing the menu to choose from
     Number = random.randint(Lower, Higher)
-    print("Romans number game!!")
-    print("1.Start")
-    print("2.See highscores")
-    print("3.Exit")
+    
+    for menuItem in menu:
+        print( menuItem )
 
-    Choice = int(input("Enter yout choice:"))
+    Choice = int(input("Enter your choice:"))
 
     if Choice == 1:
         # This is looping the game until the player guesses correct
